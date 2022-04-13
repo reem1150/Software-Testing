@@ -1,0 +1,8 @@
+
+Feature: Registration |  user could sign up with new account
+  Scenario: user could sign up with valid credentials
+    Given user navigate to registration page
+    And user fills registration form with valid data
+    When user clicks on register button
+    Then a success message is displayed
+    And user close driver

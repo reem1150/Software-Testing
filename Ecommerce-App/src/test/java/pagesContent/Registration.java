@@ -2,9 +2,9 @@ package pagesContent;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
-public class Registration(){
+public class Registration{
     public WebDriver driver;
 
     public Registration(WebDriver driver)
@@ -81,9 +81,8 @@ public class Registration(){
     public void registerLogoutEle()
     {
         // Logout after registering //
-        driver.findElement(registerLogoutPOM).click();
+        driver.findElement(registerClosePOM).click();
     }
-    //------------------------------------------------------------------------------//
 }
 
-}
+
